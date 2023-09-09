@@ -38,4 +38,4 @@ kubectl apply -f config/samples/${API_GROUP}_${API_VERSION}_$(echo $KIND | tr 'A
 
 ## Next
 
-=> [Using the operator-observability package](../02-operator-observability-package/README.md)
+=> [Adding metrics to the operator](../02-metrics/README.md)
