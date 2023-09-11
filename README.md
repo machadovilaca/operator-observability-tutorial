@@ -14,5 +14,5 @@ This tutorial is divided in 4 parts:
 
 1. [Generating an operator with operator-sdk](01-operator-sdk/README.md)
 2. [Adding metrics to the operator](02-metrics/README.md)
-3. [Adding alerts to the operator](03-alerts/README.md)
+3. [Adding alerts and recording rules to the operator](03-alerts-recordingrules/README.md)
 4. [Generating documentation for the operator](04-documentation/README.md)
