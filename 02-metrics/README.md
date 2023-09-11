@@ -57,7 +57,15 @@ make install run
 curl localhost:8080/metrics | grep observability_operator_
 ```
 
+Also update the `Dockerfile` to include the `pkg/` directory:
+
+```Dockerfile
+...
+COPY pkg/ pkg/
+...
+```
+
 ## Next
 
-=> [Adding alerts to the operator](../03-alerts/README.md)
+=> [Adding alerts and recording rules to the operator](../03-alerts-recordingrules/README.md)
 

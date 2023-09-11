@@ -4,7 +4,7 @@ layout:
 plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
-projectName: 01-operator-sdk
+projectName: observability-operator
 repo: github.com/machadovilaca/operator-observability-tutorial
 resources:
 - api:

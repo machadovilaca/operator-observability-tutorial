@@ -5,8 +5,8 @@ metadata:
     app.kubernetes.io/name: clusterrolebinding
     app.kubernetes.io/instance: manager-rolebinding
     app.kubernetes.io/component: rbac
-    app.kubernetes.io/created-by: 01-operator-sdk
-    app.kubernetes.io/part-of: 01-operator-sdk
+    app.kubernetes.io/created-by: observability-operator
+    app.kubernetes.io/part-of: observability-operator
     app.kubernetes.io/managed-by: kustomize
   name: manager-rolebinding
 roleRef:
