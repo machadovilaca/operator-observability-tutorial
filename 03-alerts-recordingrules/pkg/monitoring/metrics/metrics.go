@@ -13,16 +13,24 @@ const metricPrefix = "observability_operator_"
 var metricsLog = ctrl.Log.WithName("metrics")
 
 func SetupMetrics(client client.Client) {
-	operatormetrics.Register = runtimemetrics.Registry.Register
 	metricsLog.Info("registering metrics")
+	RegisterMetrics()
+
+	metricsLog.Info("registering collectors")
+	SetupCustomResourceCollector(client)
+	RegisterCollectors()
+}
+
+func RegisterMetrics() {
+	operatormetrics.Register = runtimemetrics.Registry.Register
 	err := operatormetrics.RegisterMetrics(operatorMetrics)
 	if err != nil {
 		panic(err)
 	}
+}
 
-	metricsLog.Info("registering collectors")
-	SetupCustomResourceCollector(client)
-	err = operatormetrics.RegisterCollector(customResourceCollector)
+func RegisterCollectors() {
+	err := operatormetrics.RegisterCollector(customResourceCollector)
 	if err != nil {
 		panic(err)
 	}

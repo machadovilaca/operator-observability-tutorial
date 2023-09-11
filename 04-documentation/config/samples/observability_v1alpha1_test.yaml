@@ -1,0 +1,12 @@
+apiVersion: observability.observability.example.com/v1alpha1
+kind: Test
+metadata:
+  labels:
+    app.kubernetes.io/name: test
+    app.kubernetes.io/instance: test-sample
+    app.kubernetes.io/part-of: observability-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: observability-operator
+  name: test-sample
+spec:
+  # TODO(user): Add fields here

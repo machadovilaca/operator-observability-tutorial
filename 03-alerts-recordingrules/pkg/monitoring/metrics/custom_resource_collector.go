@@ -28,7 +28,7 @@ var (
 	crCount = operatormetrics.NewGaugeVec(
 		operatormetrics.MetricOpts{
 			Name:        metricPrefix + "cr_count",
-			Help:        "Number of existing guestbook custom resources",
+			Help:        "Number of existing observability custom resources",
 			ConstLabels: map[string]string{"controller": "observability"},
 			ExtraFields: map[string]string{
 				"StabilityLevel":    "DEPRECATED",
